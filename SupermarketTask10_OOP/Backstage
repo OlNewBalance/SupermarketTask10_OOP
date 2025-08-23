@@ -1,0 +1,7 @@
+namespace Task10;
+
+public class Backstage
+{
+    public GoodsRenderer goodsRenderer = new GoodsRenderer();
+    public CustomerService customerService = new CustomerService();
+}
