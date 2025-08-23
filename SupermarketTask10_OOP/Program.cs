@@ -42,6 +42,7 @@ namespace Task10
 
         private static void Settings()
         {
+            Backstage backstage = new Backstage();
             while (true)
             {
                 Console.Clear();
@@ -70,8 +71,8 @@ namespace Task10
                             { () => new Vegetables(), 100 },
                         };
 
-                        MarketStorage = GoodsRenderer.RenderGoods(creationRules);
-                        Queue = CustomerService.CreateConsumerQueue(customerCount: 35);
+                        MarketStorage = backstage.goodsRenderer.RenderGoods(creationRules);
+                        Queue = backstage.customerService.CreateConsumerQueue(customerCount: 35);
                         Univermag();
                         break;
 
