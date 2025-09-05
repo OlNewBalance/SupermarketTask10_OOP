@@ -2,7 +2,7 @@ public class SupermarketUtils
 {
 }
 
-public static class GoodsRenderer
+public class GoodsRenderer
 {
     public static List<Goods> RenderGoods(Dictionary<Func<Goods>, int> creationRules)
     {
@@ -19,7 +19,7 @@ public static class GoodsRenderer
     }
 }
 
-public static class CustomerService
+public class CustomerService
 {
     private static readonly Random _random = new Random();
 
