@@ -2,6 +2,18 @@ namespace Task10;
 
 public class Backstage
 {
-    public GoodsRenderer goodsRenderer = new GoodsRenderer();
-    public CustomerService customerService = new CustomerService();
+    public GoodsRenderer goodsRenderer { get; set; }
+    public CustomerService customerService { get; set; }
+    public List<Goods> MarketStorage { get; set; }
+    public Queue<Consumer> Queue { get; set; }
+    public double UnivermagBudgetRubles { get; set; }
+    public double UnivermagProfitRubles { get; set; }
+
+    public Backstage()
+    {
+        goodsRenderer = new GoodsRenderer();
+        customerService = new CustomerService();
+        MarketStorage = new List<Goods>();
+        Queue = new Queue<Consumer>();
+    }
 }
